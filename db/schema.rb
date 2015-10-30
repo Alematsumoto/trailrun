@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151030135519) do
+
+ActiveRecord::Schema.define(version: 20151030144144) do
+
+  create_table "cities", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "events", force: :cascade do |t|
     t.integer  "place_id"
@@ -24,12 +31,6 @@ ActiveRecord::Schema.define(version: 20151030135519) do
     t.string   "name"
   end
 
-  create_table "cities", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "places", force: :cascade do |t|
     t.string   "title"
     t.integer  "city_id"
@@ -38,9 +39,10 @@ ActiveRecord::Schema.define(version: 20151030135519) do
     t.float    "distance"
     t.string   "directions"
     t.boolean  "parking"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "summit"
+    t.string   "Description"
   end
 
   create_table "tours", force: :cascade do |t|
