@@ -1,4 +1,4 @@
 class Event < ActiveRecord::Base
 
-	has_many :places
+	belongs_to :place
 end
