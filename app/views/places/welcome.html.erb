@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>welcome</h1>
+<h1>Welcome</h1>
 
 <table>
   <thead>
@@ -12,6 +12,7 @@
       <th>Distance</th>
       <th>Directions</th>
       <th>Parking</th>
+      <th>Summit</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,6 +27,7 @@
         <td><%= place.distance %></td>
         <td><%= place.directions %></td>
         <td><%= place.parking %></td>
+        <td><%= place.summit %></td>
         <td><%= link_to 'Show', place %></td>
         <td><%= link_to 'Edit', edit_place_path(place) %></td>
         <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
