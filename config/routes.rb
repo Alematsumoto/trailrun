@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+  resources :tours
+=======
 
   resources :cities
 
+>>>>>>> f03806e711bb66f1dcca1062c921e67d9a00fcd6
   resources :events
 
   resources :places

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place_id: 1
+  name: MyString
+  email: MyString
+  phone: MyString
+  people: 1
+  date: 2015-10-30 10:55:19
+
+two:
+  place_id: 1
+  name: MyString
+  email: MyString
+  phone: MyString
+  people: 1
+  date: 2015-10-30 10:55:19
