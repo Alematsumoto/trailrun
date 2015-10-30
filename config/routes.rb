@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tours
   resources :events
   resources :places
  # get 'events_name/:id' => 'places#event_place', :as  => :event_name
