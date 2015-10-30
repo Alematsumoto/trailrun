@@ -21,13 +21,21 @@
     <% @places.each do |place| %>
       <tr>
         <td><%= place.title %></td>
-        <td><%= place.city_id %></td>
+        <td><%= place.city.name %></td>
         <td><%= place.location %></td>
         <td><%= place.level %></td>
         <td><%= place.distance %></td>
         <td><%= place.directions %></td>
-        <td><%= place.parking %></td>
+
+           <% if place.parking ==true %>
+              <%= "Yes" %>
+            <% else %>
+              <%= "No" %>
+            <% end %>
+
+      
         <td><%= place.summit %></td>
+
         <td><%= link_to 'Show', place %></td>
         <td><%= link_to 'Edit', edit_place_path(place) %></td>
         <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>

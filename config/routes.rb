@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :tours
+=======
+
+  resources :cities
+
+>>>>>>> f03806e711bb66f1dcca1062c921e67d9a00fcd6
   resources :events
+
   resources :places
  # get 'events_name/:id' => 'places#event_place', :as  => :event_name
   # The priority is based upon order of creation: first created -> highest priority.
