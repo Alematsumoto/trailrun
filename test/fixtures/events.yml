@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place_id: 1
+  date: 2015-10-30 08:49:41
+  cost: 1
+  description: MyString
+  conditions: MyString
+
+two:
+  place_id: 1
+  date: 2015-10-30 08:49:41
+  cost: 1
+  description: MyString
+  conditions: MyString
