@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :events
   resources :places
+ # get 'events_name/:id' => 'places#event_place', :as  => :event_name
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Place</th>
       <th>Date</th>
       <th>Cost</th>
@@ -17,6 +18,7 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
+        <td><%= event.name %></td>
         <td><%= event.place_id %></td>
         <td><%= event.date %></td>
         <td><%= event.cost %></td>
