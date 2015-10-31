@@ -2,6 +2,8 @@
 
 <h1>Listing Tours</h1>
 
+
+
 <table>
   <thead>
     <tr>
@@ -24,6 +26,7 @@
         <td><%= tour.phone %></td>
         <td><%= tour.people %></td>
         <td><%= tour.date %></td>
+        <button type="button" class="btn btn-success">Success</button>
         <td><%= link_to 'Show', tour %></td>
         <td><%= link_to 'Edit', edit_tour_path(tour) %></td>
         <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -34,4 +37,4 @@
 
 <br>
 
-<%= link_to 'New Tour', new_tour_path %>
+<%= link_to 'Book', new_tour_path %>
