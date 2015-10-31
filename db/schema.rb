@@ -11,9 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20151031112412) do
-
 
   create_table "cities", force: :cascade do |t|
     t.string   "name"
@@ -43,7 +41,7 @@ ActiveRecord::Schema.define(version: 20151031112412) do
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.string   "summit"
-    t.string   "description"
+    t.string   "Description"
     t.string   "latitude"
     t.string   "longitude"
     t.string   "avatar_file_name"

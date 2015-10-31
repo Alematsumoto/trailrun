@@ -1,33 +1,46 @@
-<p id="notice"><%= notice %></p>
-<p>
-  <strong>Place:</strong>
-  <%= @tour.place_id %>
-</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @tour.name %>
-</p>
+<div class="row">
+  <div class="col-md-3">
+    <img src=" http://www.eldepornauta.com.ar/wp-content/uploads/2015/06/running-frio-vertical-1.jpg" alt="..." style="width:300px;">
+      
+  </div>
+  <div class="col-md-5">
+            <h3>TOUR</h3>
+        <p> <strong>Place:</strong>
+        <%= @tour.place_id %>
+        </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @tour.email %>
-</p>
+        <p>
+        <strong>Name:</strong>
+        <%= @tour.name %>
+        </p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @tour.phone %>
-</p>
+        <p>
+        <strong>Email:</strong>
+        <%= @tour.email %>
+        </p>
 
-<p>
-  <strong>People:</strong>
-  <%= @tour.people %>
-</p>
+        <p>
+        <strong>Phone:</strong>
+        <%= @tour.phone %>
+        </p>
 
-<p>
-  <strong>Date:</strong>
-  <%= @tour.date %>
-</p>
+        <p>
+        <strong>People:</strong>
+        <%= @tour.people %>
+        </p>
+
+        <p>
+        <strong>Date:</strong>
+        <%= @tour.date %>
+  </div>
+  <div class="col-md-4">
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/48SaypfuLaI" frameborder="0" allowfullscreen></iframe> 
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/Ye4zKqS6Wmk" frameborder="0" allowfullscreen></iframe>
+        
+  </div>
+
+</div>
 
 <%= link_to 'Edit', edit_tour_path(@tour) %> |
 <%= link_to 'Back', tours_path %>
