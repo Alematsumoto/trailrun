@@ -1,8 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<ul class="nav nav-pills nav-justified">
+  <%= image_tag "imagenevents.jpg" %>
+</ul>
+
+<div class="row">
+  <div class="col-md-3">
+    <img src=" " alt="..." style="width:300
+    px;">
+      
+  </div>
+  <div class="col-md-5">
+        <p>
   <strong>Name:</strong>
-  <%= @event.place_id %>
+  <%= @event.name %>
 </p>
 <p>
   <strong>Place:</strong>
@@ -28,6 +39,10 @@
   <strong>Conditions:</strong>
   <%= @event.conditions %>
 </p>
+  </div>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+  <div class="col-md-4">
+    <iframe width="260" height="315" src="https://www.youtube.com/embed/sxMokMOhiSo" frameborder="0" allowfullscreen></iframe>    
+  </div>
+
+</div>
